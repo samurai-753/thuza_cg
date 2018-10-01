@@ -1,0 +1,4 @@
+- Attributes lastPositionIndex and lastUpdateTime are now protected (were private).
+- Changed "virtual void ComputePositionIndex()" to "virtual void ComputePositionIndex(bool*)".
+Jul 09, 2008 - Bruno de Oliveira Schneider 
+- Class created to accomodate the old Action class with the new TransformAction.

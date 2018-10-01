@@ -1,0 +1,22 @@
+Nov 20, 2013 - Bruno de Oliveira Schneider
+- Added HSV named constructor.
+Oct 09, 2007 - Bruno de Oliveira Schneider
+- Fixed operator<< implementation (works with g++ 4.2).
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Sep 22, 2005 - Bruno de Oliveira Schneider
+- Added MAGENTA, CYAN and YELLOW static methods.
+Dec 02, 2004 - Bruno de Oliveira Schneider
+- Added RANDOM().
+Sep 27, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "vp" prefix from every method name.
+- Optimized code for operators == and != .
+- Added BLACK, RED, GREEN, BLUE and WHITE static methods.
+- Renamed "I" component to "A" (along with related methods).
+- Changed internal representation from "unsigned int" to "unsigned char".
+- "rgba" is now a public atribute. A few Get/Set methods were removed.
+- Added "const" modifier wherever possible.
+Jun 13, 2000 - Fernando Sola Pereira
+- Implementation of the class methods.
+- Attributes and methods declaration.

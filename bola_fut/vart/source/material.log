@@ -1,0 +1,27 @@
+Sep 26, 2013 - Bruno de Oliveira Schneider
+- Added 'bool HasTexture() const'.
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added PLASTIC_WHITE() and PLASTIC_BLACK().
+Mar 05, 2007 - Leonardo Garcia Fischer
+- Added SetPlasticColor(const VART::Color& c), GetSpecularColor(), GetAmbientColor(), 
+  GetEmissiveColor() and GetShininess() methods.
+- Added shininess initialization in Material() and Material(const VART::Texture& t)
+  methods.
+Feb 23, 2007 - Leonardo Garcia Fischer
+- Added methods void SetTexture(const Texture& t), const VART::Texture& GetTexture()
+- Modified implementation of Material::Material(const VART::Material& m), to call the
+  copy operator.
+- The texture is now initialized in the constructor Material::Material(const VART::Texture& t).
+- The texture is now copied in the copy operator.
+- Changed implementation of Material::DrawOGL(), to draw texture.
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Dec 15, 2004 - Bruno de Oliveira Schneider 
+- Added PLASTIC_RED(), PLASTIC_GREEN(), PLASTIC_BLUE(), LIGHT_PLASTIC_GRAY()
+  and DARK_PLASTIC_GRAY().
+- Added SetDiffuseColor, SetSpecularColor, SetShininess, GetDiffuseColor, 
+  SetAmbientColor and SetEmissiveColor.
+Sep 24, 2004 - Bruno de Oliveira Schneider 
+- File created.

@@ -1,0 +1,39 @@
+- LoadScene(const std::string&) now returns bool as error signal (true if no errors).
+- LoadScene seemed to be allocating a new light for no reason (memory leak).
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Changed calls from VART::XmlBase::GetPathFromString() method to the new class 
+  VART::File::GetPathFromString().
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added the parameter 'const std::string& basePath' to the methods 'LoadScene()' and
+  'LoadSceneNode()', to load a .xml file from a different directory.
+- Modified the "XmlScene::LoadFromFile(const std::string& fileName)" implementation,
+  to load a .xml file from an different directory than the current directory.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- The 'result' variable of XmlScene::LoadMeshFromFile() method now is initialized
+  with NULL, to avoid compile warnings.
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Vectors for dofs are now normalized after input from file.
+Nov 03, 2006 - Bruno de Oliveira Schneider
+- Bug fix: creation of directional lights not treating color components as
+  integer numbers in range [0..255].
+- Bug fix: removed memory leaks from XMLString::transcode usage.
+- Moved some code to new base class "XmlBase" (note: StrX was replaced by
+  TempCString and XercesString was created).
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Fixed declaration for operator<<.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Mar 24, 2006 - Andreia Schneider
+- Added rest position of dofs.
+Mar 16, 2006 - Andreia Schneider
+- Deleted unused VART::MeshObject pointers.
+- Implemented method called LoadMeshFromFile to avoid loading a file many times.
+- Implemented method LoadFromFile, that verifies if the xml parser is valid and calls the method LoadScene.
+- Implemented method called ParserFile, that parsers the xml file.
+- Class name has changed to VART::XmlScene and now it is child of VART::Scene class.
+- Now, error messagens are shown in case of parser errors.
+- DOMcountErrorHandler was renamed to ErrorHandler and was nested into VART::XML.
+- StrX was nested into VART::XML.
+Feb 20, 2006 - Andreia Schneider
+- Reimplemented the part of load transformation, in method LoadSceneNode.
+- Class Reimplemented conforming to new DTD format.

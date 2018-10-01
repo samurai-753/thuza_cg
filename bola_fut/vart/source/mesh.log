@@ -1,0 +1,25 @@
+Sep 26, 2013 - Bruno de Oliveira Schneider
+- Added 'operator<<(ostream&, Mesh)'.
+  -> requires a C++11 compiler
+- Added mesh type NONE to indicate an inconsistent (unfinished) mesh.
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Jun 09, 2005 - Bruno de Oliveira Schneider
+- Added a function to output mesh types.
+Dec 15, 2004 - Bruno de Oliveira Schneider
+- Added GetOglType() and IncrementIndices.
+Oct 26, 2004 - Bruno de Oliveira Schneider
+- Rename VPMeshType to MeshType, since its internal to a VP class, the prefix
+  seems redundant. Declared MeshType following OpenGL's primitives.
+- Added copy constructor, operator=, GetOglType and DrawInstanceOGL.
+Sep 23, 2004 - Bruno de Oliveira Schneider 
+- The class has been recreated from scratch after discussion with
+  Carla Freitas and Eduardo Costa.
+Aug 24, 2000 - Anderson Maciel
+- Class and methods declaration.
+Aug 22, 2000 - Anderson Maciel
+- Class standarization.
+Jun 07, 2000 - Julierme Kruger Gaviao
+- Class and methods declaration.

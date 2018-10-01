@@ -1,0 +1,41 @@
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Converted 'tabs' to 'spaces' on the files.
+Jul 12, 2006 - Dalton Reis
+- Added some code comments.
+Jun 23, 2006 - Cleber Souza Ughini
+- Added testPoint, for checking a Point4d against BBox.
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Moved operator<< into VART namespace.
+May 31, 2006 - Bruno de Oliveira Schneider
+- Renamed Transform(...) to ApplyTransform because it was conflicting with Transform class.
+- General renaming to account for project rename (VPAT->V-ART).
+- Added "CopyGeometryFrom".
+May 17, 2006 - Dalton Reis
+- Added SetVisibility
+May 17, 2006 - Dalton Reis
+- Added GetSmallerEdge, GetEdgeX, GetEdgeY and GetEdgeZ
+May 17, 2006 - Bruno de Oliveira Schneider
+- DrawInstanceOGL now conforms to standards (checks for VART_OGL, retuns bool).
+- Optimized DrawInstanceOGL for better speed.
+May 11, 2006 - Dalton Reis
+- Added attribute of the color and corrected errors in method Transform.
+May 08, 2006 - Dalton Reis
+- Added a transform method
+Jul 03, 2005 - Andreia Schneider
+- Added intersection test among AAbbs.
+- Added a draw method.
+- Added the atribute visible.
+- Added ToggleVisibility.
+Dec 15, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Attributes were changed from float to double.
+- Removed "vp" prefix from every method name.
+- Changed "center" type from VPPoint3D* to VPPoint4D, along with realted methods.
+- Added "const" modifier wherever possible.
+- Added a copy constructor, operator= and an ouput operator.
+- Added GetGreaterEdge, ConditionalUpdate and MergeWith.
+Mar 01, 2001 - Isabel Harb Manssour
+- File and variables rename.
+Jan 23, 2001 - Fernando Sola Pereira
+- Methods implementation.
+- Class declarations.

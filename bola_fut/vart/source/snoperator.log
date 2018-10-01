@@ -1,0 +1,4 @@
+- Changed "virtual void OperateOn(SceneNode* nodePtr)" to "virtual void
+  OperateOn(const SceneNode* nodePtr)"
+Dec 12, 2006 - Bruno de Oliveira Schneider
+- File created.
