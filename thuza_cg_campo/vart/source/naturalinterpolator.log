@@ -1,0 +1,8 @@
+Sep 18, 2006 - Bruno de Oliveira Schneider
+- Removed noise related stuff. Noise is now done by the NoisyDofMover.
+Jun 28, 2006 - Bruno de Oliveira Schneider
+- Changed GetValue(float) to GetValue(float, float, float) so that instead of
+  returning an interpolation index, it computes the new DOF position. This
+  should enable noisy interpolation even if its position range is zero.
+May 29, 2006 - Bruno de Oliveira Schneider
+- File created.

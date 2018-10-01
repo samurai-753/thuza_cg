@@ -1,0 +1,4 @@
+#ignores c++ .o
+*.o
+#ignores executable
+*.app

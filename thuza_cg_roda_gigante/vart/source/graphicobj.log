@@ -1,0 +1,48 @@
+- PickName() is now const.
+Apr 22, 2008 - Bruno de Oliveira Schneider
+- Added pickName attribute and related methods because it is not possible to 
+  cast pointers to unsinged int on 64bit platforms as previosly done at 
+  GraphicObj::DrawForPicking().
+- Removed Copy() because it must allocate memory inside the library that must
+  be deallocated by the user (against our policy). It would be better to make
+  "GraphicObj"s childless.
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added "void ToggleRecVisibility()".
+- Added "void SetBBoxColor(VART::Color value)".
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added virtual VART::SceneNode * Copy() method declaration. All derivated 
+  classes must implement this method.
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Added DrawForPicking().
+Jul 03, 2006 - Dalton Reis
+- Unnecessary const in SetBBoxVisibility.
+Jul 03, 2006 - Dalton Reis
+- Added SetBBoxVisibility().
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- ComputeRecursiveBoundingBox now enters transforms.
+- Removed RecursiveBoundingBox. GetRecursiveBoundingBox should be used instead.
+- Added ToggleRecBBoxVisibility.
+- Removed bBoxShow because VPBoundingBox already has a visibility flag.
+May 08, 2006 - Dalton Reis
+- Added a RecursiveBoundingBox method
+Feb 17, 2006 - Andreia Schneider
+- Removed const of the VPSceneNode in method ComputeRecursiveBoundingBox.
+- Added bBoxShow (attribute that indicates if the bounding box is visible, or not).
+Jan 25, 2006 - Bruno de Oliveira Schneider
+- Added polygon display modes.
+Apr 27, 2005 - Bruno de Oliveira Schneider
+- Added ToggleVisibility() and IsVisible().
+Dec 03, 2004 - Bruno de Oliveira Schneider
+- Added bBox, recBBox and related methods.
+Oct 13, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "using namespace std" from header file.
+- Removed "vp" prefix from every method name.
+- Removed IVPATH declaration.
+- VPGraphicObj is now derived from VPSceneNode. AS A RESULT, MOST METHODS AND
+  ATRIBUTES WERE REMOVED.
+May 04, 2004 - Bruno de Oliveira Schneider
+- Commented out IVPATH declaration.
+Jul 25, 2000 - Anderson Maciel
+- Classes declaration.

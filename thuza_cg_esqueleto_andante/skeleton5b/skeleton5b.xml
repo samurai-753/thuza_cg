@@ -1,0 +1,838 @@
+<?xml version="1.0"?>                  
+<!DOCTYPE scene SYSTEM "vartScene.dtd">  
+<scene description="skeleton v5b" >              
+      <node>                                                    
+         <joint description="hipJoint" type="uniaxial"> 
+         <dof description="twisthipJoint">                            
+            <position x="0.000000" y="0.000000" z="0.000000"/>     
+            <axis x="0.002515" y="-0.434361" z="-0.900735"/>         
+            <range min="-0.523599" max="0.523599" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="hipMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="bellyJoint" type="polyaxial"> 
+         <dof description="flexbellyJoint">                            
+            <position x="-0.000401" y="0.484557" z="1.524144"/>     
+            <axis x="1.000000" y="0.000544" z="0.000578"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="adductbellyJoint">                            
+            <position x="-0.000401" y="0.484557" z="1.524144"/>     
+            <axis x="0.000580" y="-0.997968" z="-0.063710"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistbellyJoint">                            
+            <position x="-0.000401" y="0.484557" z="1.524144"/>     
+            <axis x="-0.000542" y="-0.063710" z="0.997968"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="bellyMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="thoraxJoint" type="polyaxial"> 
+         <dof description="flexthoraxJoint">                            
+            <position x="-0.001331" y="0.375307" z="3.235471"/>     
+            <axis x="1.000000" y="0.000167" z="0.000128"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="adductthoraxJoint">                            
+            <position x="-0.001331" y="0.375307" z="3.235471"/>     
+            <axis x="0.000129" y="-0.966666" z="0.256040"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistthoraxJoint">                            
+            <position x="-0.001331" y="0.375307" z="3.235471"/>     
+            <axis x="-0.000166" y="0.256040" z="0.966666"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="thoraxMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="chestJoint" type="polyaxial"> 
+         <dof description="flexchestJoint">                            
+            <position x="-0.001562" y="0.730484" z="4.576427"/>     
+            <axis x="0.999974" y="0.004176" z="0.005838"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="adductchestJoint">                            
+            <position x="-0.001562" y="0.730484" z="4.576427"/>     
+            <axis x="0.005838" y="-0.946330" z="-0.323148"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistchestJoint">                            
+            <position x="-0.001562" y="0.730484" z="4.576427"/>     
+            <axis x="-0.004176" y="-0.323174" z="0.946330"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="chestMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_shoulderJoint" type="polyaxial"> 
+         <dof description="flexR_shoulderJoint">                            
+            <position x="-0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="0.066388" y="0.997696" z="0.013976"/>         
+            <range min="-0.209440" max="0.349066" rest="0.375000"/> 
+         </dof> 
+         <dof description="adductR_shoulderJoint">                            
+            <position x="-0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="-0.226233" y="0.001409" z="0.974072"/>         
+            <range min="-0.174533" max="0.174533" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistR_shoulderJoint">                            
+            <position x="-0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="-0.971808" y="0.067828" z="-0.225806"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_shoulderMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_armJoint" type="polyaxial"> 
+         <dof description="flexR_armJoint">                            
+            <position x="-1.725132" y="0.414301" z="5.463085"/>     
+            <axis x="-0.024713" y="-0.994068" z="0.105915"/>         
+            <range min="-2.967060" max="1.745329" rest="0.629630"/> 
+         </dof> 
+         <dof description="adductR_armJoint">                            
+            <position x="-1.725132" y="0.414301" z="5.463085"/>     
+            <axis x="0.965684" y="-0.051138" z="-0.254636"/>         
+            <range min="-3.228859" max="0.785398" rest="0.804348"/> 
+         </dof> 
+         <dof description="twistR_armJoint">                            
+            <position x="-1.725132" y="0.414301" z="5.463085"/>     
+            <axis x="0.258542" y="0.095987" z="0.961219"/>         
+            <range min="-0.959931" max="1.570796" rest="0.379310"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_armMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_forearmJoint" type="biaxial"> 
+         <dof description="flexR_forearmJoint">                            
+            <position x="-2.447020" y="0.146290" z="2.779213"/>     
+            <axis x="0.799098" y="0.593132" z="-0.098164"/>         
+            <range min="-2.443461" max="0.226893" rest="0.915033"/> 
+         </dof> 
+         <dof description="adductR_forearmJoint">                            
+            <position x="-2.447020" y="0.146290" z="2.779213"/>     
+            <axis x="-0.043477" y="0.219865" z="0.974561"/>         
+            <range min="-1.570796" max="1.570796" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_forearmMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_handJoint" type="biaxial"> 
+         <dof description="adductR_handJoint">                            
+            <position x="-2.349447" y="-0.441694" z="0.148544"/>     
+            <axis x="0.988171" y="0.132719" z="0.076833"/>         
+            <range min="-0.523599" max="0.349066" rest="0.600000"/> 
+         </dof> 
+         <dof description="flexR_handJoint">                            
+            <position x="-2.349447" y="-0.441694" z="0.148544"/>     
+            <axis x="0.122574" y="-0.984635" z="0.124376"/>         
+            <range min="-1.396263" max="1.396263" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_handMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_indexf_baseJoint" type="biaxial"> 
+         <dof description="flexR_indexf_baseJoint">                            
+            <position x="-2.165056" y="-0.800308" z="-0.579563"/>     
+            <axis x="-0.282455" y="0.876792" z="-0.389172"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductR_indexf_baseJoint">                            
+            <position x="-2.165056" y="-0.800308" z="-0.579563"/>     
+            <axis x="-0.920384" y="-0.362052" z="-0.147690"/>         
+            <range min="-0.523599" max="0.174533" rest="0.750000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_indexf_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_indexf_midJoint" type="uniaxial"> 
+         <dof description="flexR_indexf_midJoint">                            
+            <position x="-2.079698" y="-0.900212" z="-0.866595"/>     
+            <axis x="-0.175171" y="0.934157" z="-0.310912"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_indexf_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_indexf_tipJoint" type="uniaxial"> 
+         <dof description="flexR_indexf_tipJoint">                            
+            <position x="-1.931692" y="-0.960406" z="-1.130839"/>     
+            <axis x="-0.310737" y="0.888290" z="-0.338206"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_indexf_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="R_ringf_baseJoint" type="biaxial"> 
+         <dof description="flexR_ringf_baseJoint">                            
+            <position x="-2.280770" y="-0.468483" z="-0.738309"/>     
+            <axis x="-0.042257" y="0.986805" z="-0.156301"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductR_ringf_baseJoint">                            
+            <position x="-2.280770" y="-0.468483" z="-0.738309"/>     
+            <axis x="-0.964355" y="-0.081186" z="-0.251850"/>         
+            <range min="-0.261799" max="0.436332" rest="0.375000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_ringf_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_ringf_midJoint" type="uniaxial"> 
+         <dof description="flexR_ringf_midJoint">                            
+            <position x="-2.205968" y="-0.508599" z="-1.011803"/>     
+            <axis x="-0.179232" y="0.982691" z="-0.046843"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_ringf_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_ringf_tipJoint" type="uniaxial"> 
+         <dof description="flexR_ringf_tipJoint">                            
+            <position x="-2.019588" y="-0.485887" z="-1.248461"/>     
+            <axis x="-0.265021" y="0.960900" z="0.080218"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_ringf_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="R_thumb_baseJoint" type="polyaxial"> 
+         <dof description="flexR_thumb_baseJoint">                            
+            <position x="-2.215638" y="-0.600044" z="-0.003468"/>     
+            <axis x="-0.024204" y="-0.751388" z="0.659416"/>         
+            <range min="-0.174533" max="0.698132" rest="0.200000"/> 
+         </dof> 
+         <dof description="twistR_thumb_baseJoint">                            
+            <position x="-2.215638" y="-0.600044" z="-0.003468"/>     
+            <axis x="0.411640" y="-0.608588" z="-0.678361"/>         
+            <range min="-1.570796" max="1.570796" rest="0.500000"/> 
+         </dof> 
+         <dof description="adductR_thumb_baseJoint">                            
+            <position x="-2.215638" y="-0.600044" z="-0.003468"/>     
+            <axis x="0.911025" y="0.255023" z="0.324032"/>         
+            <range min="-0.349066" max="1.221730" rest="0.222222"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_thumb_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_thumb_midJoint" type="uniaxial"> 
+         <dof description="flexR_thumb_midJoint">
+            <position x="-2.013312" y="-0.899173" z="-0.336890"/>     
+            <axis x="-0.935563" y="-0.160280" z="-0.314694"/>         
+            <range min="-0.872665" max="0.174533" rest="0.83"/>
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_thumb_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_thumb_tipJoint" type="uniaxial"> 
+         <dof description="flexR_thumb_tipJoint">                            
+            <position x="-1.963641" y="-0.972218" z="-0.447355"/>     
+            <axis x="-0.874367" y="-0.205509" z="-0.439599"/>         
+            <range min="-1.570796" max="0.349066" rest="0.818182"/>
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_thumb_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="R_littlef_baseJoint" type="biaxial"> 
+         <dof description="flexR_littlef_baseJoint">                            
+            <position x="-2.292485" y="-0.263457" z="-0.631411"/>     
+            <axis x="-0.131924" y="0.988348" z="-0.075917"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductR_littlef_baseJoint">                            
+            <position x="-2.292485" y="-0.263457" z="-0.631411"/>     
+            <axis x="-0.915647" y="-0.150841" z="-0.372610"/>         
+            <range min="-0.174533" max="0.523599" rest="0.250000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_littlef_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_littlef_midJoint" type="uniaxial"> 
+         <dof description="flexR_littlef_midJoint">                            
+            <position x="-2.205822" y="-0.268103" z="-0.842495"/>     
+            <axis x="-0.102905" y="0.988369" z="0.111975"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_littlef_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_littlef_tipJoint" type="uniaxial"> 
+         <dof description="flexR_littlef_tipJoint">                            
+            <position x="-2.049825" y="-0.225305" z="-1.076900"/>     
+            <axis x="-0.134809" y="0.952986" z="0.271373"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_littlef_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="R_middlef_baseJoint" type="biaxial"> 
+         <dof description="flexR_middlef_baseJoint">                            
+            <position x="-2.261830" y="-0.672039" z="-0.701735"/>     
+            <axis x="-0.113576" y="0.952179" z="-0.283648"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductR_middlef_baseJoint">                            
+            <position x="-2.261830" y="-0.672039" z="-0.701735"/>     
+            <axis x="-0.944094" y="-0.192368" z="-0.267735"/>         
+            <range min="-0.436332" max="0.261799" rest="0.625000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_middlef_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_middlef_midJoint" type="uniaxial"> 
+         <dof description="flexR_middlef_midJoint">                            
+            <position x="-2.165093" y="-0.746236" z="-0.989541"/>     
+            <axis x="-0.120666" y="0.976320" z="-0.179551"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_middlef_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_middlef_tipJoint" type="uniaxial"> 
+         <dof description="flexR_middlef_tipJoint">                            
+            <position x="-1.969540" y="-0.782574" z="-1.318550"/>     
+            <axis x="-0.338418" y="0.909397" z="-0.241805"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_middlef_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_shoulderJoint" type="polyaxial"> 
+         <dof description="flexL_shoulderJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="0.066385" y="-0.997696" z="-0.013979"/>         
+            <range min="-0.209440" max="0.349066" rest="0.375000"/> 
+         </dof> 
+         <dof description="adductL_shoulderJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="0.226234" y="0.001406" z="0.974072"/>         
+            <range min="-0.174533" max="0.174533" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistL_shoulderJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="0.971808" y="0.067826" z="-0.225806"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_shoulderMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_armJoint" type="polyaxial"> 
+         <dof description="adductL_armJoint">                            
+            <position x="1.725135" y="0.414298" z="5.463085"/>     
+            <axis x="-0.024722" y="0.994068" z="-0.105916"/>         
+            <range min="-2.967060" max="1.745329" rest="0.629630"/> 
+         </dof> 
+         <dof description="flexL_armJoint">                            
+            <position x="1.725135" y="0.414298" z="5.463085"/>     
+            <axis x="0.965684" y="0.051147" z="0.254635"/>         
+            <range min="-3.228859" max="0.785398" rest="0.804348"/> 
+         </dof> 
+         <dof description="twistL_armJoint">                            
+            <position x="1.725135" y="0.414298" z="5.463085"/>     
+            <axis x="0.258542" y="-0.095986" z="-0.961219"/>         
+            <range min="-0.959931" max="1.570796" rest="0.379310"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_armMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_forearmJoint" type="biaxial"> 
+         <dof description="flexL_forearmJoint">                            
+            <position x="2.447023" y="0.146290" z="2.779213"/>     
+            <axis x="0.799102" y="-0.593128" z="0.098163"/>         
+            <range min="-2.443461" max="0.226893" rest="0.915033"/> 
+         </dof> 
+         <dof description="twistL_forearmJoint">                            
+            <position x="2.447023" y="0.146290" z="2.779213"/>     
+            <axis x="-0.043476" y="-0.219865" z="-0.974561"/>         
+            <range min="-1.570796" max="1.570796" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_forearmMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_handJoint" type="biaxial"> 
+         <dof description="flexL_handJoint">                            
+            <position x="2.349456" y="-0.441692" z="0.148542"/>     
+            <axis x="0.988169" y="-0.132755" z="-0.076794"/>         
+            <range min="-0.523599" max="0.349066" rest="0.600000"/> 
+         </dof> 
+         <dof description="flexL_handJoint">                            
+            <position x="2.349456" y="-0.441692" z="0.148542"/>     
+            <axis x="0.122613" y="0.984629" z="-0.124383"/>         
+            <range min="-1.396263" max="1.396263" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_handMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_littlef_baseJoint" type="biaxial"> 
+         <dof description="flexL_littlef_baseJoint">                            
+            <position x="2.292524" y="-0.263454" z="-0.631393"/>     
+            <axis x="-0.273555" y="-0.952578" z="0.133273"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductL_littlef_baseJoint">                            
+            <position x="2.292524" y="-0.263454" z="-0.631393"/>     
+            <axis x="0.883728" y="-0.303612" z="-0.356152"/>         
+            <range min="-0.174533" max="0.523599" rest="0.250000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_littlef_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_littlef_midJoint" type="uniaxial"> 
+         <dof description="flexL_littlef_midJoint">                            
+            <position x="2.205860" y="-0.268098" z="-0.842475"/>     
+            <axis x="-0.245550" y="-0.969289" z="-0.013566"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_littlef_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_littlef_tipJoint" type="uniaxial"> 
+         <dof description="flexL_littlef_tipJoint">                            
+            <position x="2.049862" y="-0.225298" z="-1.076877"/>     
+            <axis x="-0.56953" y="-0.81914" z="0.068128"/>
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_littlef_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_indexf_baseJoint" type="biaxial"> 
+         <dof description="flexL_indexf_baseJoint">                            
+            <position x="2.165091" y="-0.800306" z="-0.579546"/>     
+            <axis x="-0.422977" y="-0.809352" z="0.407481"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductL_indexf_baseJoint">                            
+            <position x="2.165091" y="-0.800306" z="-0.579546"/>     
+            <axis x="0.864858" y="-0.494771" z="-0.084983"/>         
+            <range min="-0.523599" max="0.174533" rest="0.750000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_indexf_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_indexf_midJoint" type="uniaxial"> 
+         <dof description="flexL_indexf_midJoint">                            
+            <position x="2.079734" y="-0.900208" z="-0.866577"/>     
+            <axis x="-0.264132" y="-0.897783" z="0.352449"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_indexf_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_indexf_tipJoint" type="uniaxial"> 
+         <dof description="flexL_indexf_tipJoint">                            
+            <position x="1.931727" y="-0.960399" z="-1.130819"/>     
+            <axis x="-0.190100" y="-0.947472" z="0.257213"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_indexf_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_ringf_baseJoint" type="biaxial"> 
+         <dof description="flexL_ringf_baseJoint">                            
+            <position x="2.280807" y="-0.468480" z="-0.738291"/>     
+            <axis x="-0.209073" y="-0.957716" z="0.197656"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductL_ringf_baseJoint">                            
+            <position x="2.280807" y="-0.468480" z="-0.738291"/>     
+            <axis x="0.942365" y="-0.251309" z="-0.220888"/>         
+            <range min="-0.261799" max="0.436332" rest="0.375000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_ringf_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_ringf_midJoint" type="uniaxial"> 
+         <dof description="flexL_ringf_midJoint">                            
+            <position x="2.206003" y="-0.508594" z="-1.011784"/>     
+            <axis x="-0.359323" y="-0.912526" z="0.195403"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_ringf_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_ringf_tipJoint" type="uniaxial"> 
+         <dof description="flexL_ringf_tipJoint">                            
+            <position x="2.019623" y="-0.485879" z="-1.248439"/>     
+            <axis x="-0.221012" y="-0.966003" z="-0.134137"/>         
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_ringf_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_middlef_baseJoint" type="biaxial"> 
+         <dof description="flexL_middlef_baseJoint">                            
+            <position x="2.261866" y="-0.672037" z="-0.701718"/>     
+            <axis x="-0.179149" y="-0.936443" z="0.301628"/>         
+            <range min="-1.570796" max="0.523599" rest="0.750000"/> 
+         </dof> 
+         <dof description="adductL_middlef_baseJoint">                            
+            <position x="2.261866" y="-0.672037" z="-0.701718"/>     
+            <axis x="0.933873" y="-0.258312" z="-0.247299"/>         
+            <range min="-0.436332" max="0.261799" rest="0.625000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_middlef_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_middlef_midJoint" type="uniaxial"> 
+         <dof description="flexL_middlef_midJoint">                            
+            <position x="2.165130" y="-0.746232" z="-0.989521"/>     
+            <axis x="-0.209144" y="-0.950622" z="0.229297"/>         
+            <range min="-1.483530" max="0.261799" rest="0.850000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_middlef_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_middlef_tipJoint" type="uniaxial"> 
+         <dof description="flexL_middlef_tipJoint">                            
+            <position x="1.969580" y="-0.782567" z="-1.318524"/>     
+            <axis x="-0.3001" y="-0.9451" z="-0.12936"/>
+            <range min="-1.745329" max="0.261799" rest="0.869565"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_middlef_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_thumb_baseJoint" type="polyaxial"> 
+         <dof description="flexL_thumb_baseJoint">                            
+            <position x="2.215670" y="-0.600046" z="-0.003454"/>     
+            <axis x="0.434580" y="0.523192" z="-0.733083"/>         
+            <range min="-0.174533" max="0.698132" rest="0.200000"/> 
+         </dof> 
+         <dof description="adductL_thumb_baseJoint">                            
+            <position x="2.215670" y="-0.600046" z="-0.003454"/>     
+            <axis x="0.411637" y="0.608587" z="0.678364"/>         
+            <range min="-1.570796" max="1.570796" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistL_thumb_baseJoint">                            
+            <position x="2.215670" y="-0.600046" z="-0.003454"/>     
+            <axis x="0.801059" y="-0.596567" z="0.049115"/>         
+            <range min="-0.349066" max="1.221730" rest="0.222222"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_thumb_baseMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_thumb_midJoint" type="uniaxial"> 
+         <dof description="flexL_thumb_midJoint">                            
+            <position x="2.013348" y="-0.899170" z="-0.336874"/>     
+            <axis x="-0.816650" y="-0.239057" z="0.525295"/>         
+            <range min="-0.872665" max="0.174533" rest="0.83"/>
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_thumb_midMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_thumb_tipJoint" type="uniaxial"> 
+         <dof description="flexL_thumb_tipJoint">                            
+            <position x="1.963676" y="-0.972215" z="-0.447338"/>     
+            <axis x="-0.857928" y="0.047653" z="0.511555"/>         
+            <range min="-1.570796" max="0.349066" rest="0.818182"/>
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_thumb_tipMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="neckJoint" type="polyaxial"> 
+         <dof description="flexneckJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="1.000000" y="-0.000000" z="-0.000000"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="adductneckJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="-0.000000" y="-0.995969" z="-0.089695"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         <dof description="twistneckJoint">                            
+            <position x="0.007327" y="0.284276" z="5.883030"/>     
+            <axis x="0.000000" y="-0.089695" z="0.995969"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="neckMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="headJoint" type="polyaxial"> 
+         <dof description="adductheadJoint">                            
+            <position x="0.007327" y="0.158693" z="7.277505"/>     
+            <axis x="-0.000000" y="-0.999981" z="-0.006185"/>         
+            <range min="-0.785398" max="0.785398" rest="0.500000"/> 
+         </dof> 
+         <dof description="flexheadJoint">                            
+            <position x="0.007327" y="0.158693" z="7.277505"/>     
+            <axis x="1.000000" y="-0.000000" z="-0.000000"/>         
+            <range min="-1.134464" max="0.785398" rest="0.590909"/> 
+         </dof> 
+         <dof description="twistheadJoint">                            
+            <position x="0.007327" y="0.158693" z="7.277505"/>     
+            <axis x="0.000000" y="-0.006185" z="0.999981"/>         
+            <range min="-1.570796" max="1.570796" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="headMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="R_thighJoint" type="polyaxial"> 
+         <dof description="flexR_thighJoint">                            
+            <position x="-0.976772" y="-0.053249" z="0.771506"/>     
+            <axis x="0.999282" y="-0.027297" z="0.026282"/>         
+            <range min="-2.181662" max="0.523599" rest="0.806452"/> 
+         </dof> 
+         <dof description="adductR_thighJoint">                            
+            <position x="-0.976772" y="-0.053249" z="0.771506"/>     
+            <axis x="0.026282" y="0.998924" z="0.038200"/>         
+            <range min="-0.436332" max="0.785398" rest="0.357143"/> 
+         </dof> 
+         <dof description="twistR_thighJoint">                            
+            <position x="-0.976772" y="-0.053249" z="0.771506"/>     
+            <axis x="0.027296" y="0.037482" z="-0.998924"/>         
+            <range min="-0.698132" max="1.134464" rest="0.380952"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_thighMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_legJoint" type="uniaxial"> 
+         <dof description="flexR_legJoint">                            
+            <position x="-0.847983" y="0.123597" z="-3.941636"/>     
+            <axis x="0.998863" y="-0.041375" z="0.023665"/>         
+            <range min="0.000000" max="2.356194" rest="0.000000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_legMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_footJoint" type="polyaxial"> 
+         <dof description="flexR_footJoint">                            
+            <position x="-0.744619" y="0.148815" z="-8.260293"/>     
+            <axis x="0.994726" y="-0.102119" z="-0.009597"/>         
+            <range min="-0.523599" max="0.361799" rest="0.591371"/>
+         </dof> 
+         <dof description="adductR_footJoint">                            
+            <position x="-0.744619" y="0.148815" z="-8.260293"/>     
+            <axis x="-0.023696" y="-0.319835" z="0.947177"/>         
+            <range min="-0.872665" max="0.349066" rest="0.714286"/> 
+         </dof> 
+         <dof description="twistR_footJoint">                            
+            <position x="-0.744619" y="0.148815" z="-8.260293"/>     
+            <axis x="-0.099794" y="-0.941954" z="-0.320568"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_footMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="R_footfingersJoint" type="uniaxial"> 
+         <dof description="adductR_footfingersJoint">                            
+            <position x="-0.914639" y="-1.455999" z="-8.806447"/>     
+            <axis x="-0.942040" y="0.335466" z="0.004796"/>         
+            <range min="-0.523599" max="1.134464" rest="0.315789"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="R_footfingersMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      <node>                                                    
+         <joint description="L_thighJoint" type="polyaxial"> 
+         <dof description="flexL_thighJoint">                            
+            <position x="0.976771" y="-0.053249" z="0.771506"/>     
+            <axis x="0.999282" y="0.027296" z="-0.026282"/>         
+            <range min="-2.181662" max="0.523599" rest="0.806452"/> 
+         </dof> 
+         <dof description="adductL_thighJoint">                            
+            <position x="0.976771" y="-0.053249" z="0.771506"/>     
+            <axis x="0.026282" y="-0.998924" z="-0.038200"/>         
+            <range min="-0.436332" max="0.785398" rest="0.357143"/> 
+         </dof> 
+         <dof description="twistL_thighJoint">                            
+            <position x="0.976771" y="-0.053249" z="0.771506"/>     
+            <axis x="0.027296" y="-0.037482" z="0.998924"/>         
+            <range min="-0.698132" max="1.134464" rest="0.380952"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_thighMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_legJoint" type="uniaxial"> 
+         <dof description="flexL_legJoint">                            
+            <position x="0.847982" y="0.123599" z="-3.941632"/>     
+            <axis x="0.999711" y="-0.002246" z="-0.023940"/>         
+            <range min="0.000000" max="2.356194" rest="0.000000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_legMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_footJoint" type="polyaxial"> 
+         <dof description="flexL_footJoint">                            
+            <position x="0.744619" y="0.148820" z="-8.260290"/>     
+            <axis x="0.994725" y="0.102124" z="0.009584"/>         
+            <range min="-0.523599" max="0.361799" rest="0.591371"/>
+         </dof> 
+         <dof description="adductL_footJoint">                            
+            <position x="0.744619" y="0.148820" z="-8.260290"/>     
+            <axis x="-0.023711" y="0.319836" z="-0.947176"/>         
+            <range min="-0.872665" max="0.349066" rest="0.714286"/> 
+         </dof> 
+         <dof description="twistL_footJoint">                            
+            <position x="0.744619" y="0.148820" z="-8.260290"/>     
+            <axis x="-0.099795" y="0.941953" z="0.320570"/>         
+            <range min="-0.349066" max="0.349066" rest="0.500000"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_footMesh" type = "obj"/> 
+         </node >                                           
+      <node>                                                    
+         <joint description="L_footfingersJoint" type="uniaxial"> 
+         <dof description="adductL_footfingersJoint">                            
+            <position x="0.914640" y="-1.455986" z="-8.806446"/>     
+            <axis x="-0.942037" y="-0.335473" z="-0.004799"/>         
+            <range min="-0.523599" max="1.134464" rest="0.315789"/> 
+         </dof> 
+         </joint>         
+         <node  >                                           
+            <meshobject filename="skeleton5b.obj"  description="L_footfingersMesh" type = "obj"/> 
+         </node >                                           
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+      </node>             
+</scene>                              

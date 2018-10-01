@@ -1,0 +1,34 @@
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added void Apply(const Transform& t).
+- Fixed MakeRotation methods (they were loosing children because of deep copy on operator= ).
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added the method "Transform::ToggleRecVisibility()".
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added virtual VART::SceneNode * Copy() method implementation.
+- Now, the copy constructor calls the copy operator.
+Nov 23, 2006 - Bruno de Oliveira Schneider
+- Added void CopyMatrix(const Transform&).
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Bug fix: operator= now calls code from SceneNode::operator=.
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Added DrawForPicking().
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Moved operator<< into VART namespace.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Fixed a few bugs in RecursiveBoundingBox;
+- RecursiveBoundingBox now checks the type of its children to call the right
+  bounding box method.
+May 08, 2006 - Dalton Reis
+- Added a RecursiveBoundingBox method
+Mar 13, 2006 - Bruno de Oliveira Schneider 
+- Attribute "matrix" changed from private to protected.
+Feb 20, 2006 - Andreia Schneider
+- Added the method SetData, that modifies all data of the matrix.
+- Removed const of the VPSceneNode in method DrawOGL.
+May 17, 2005 - Bruno de Oliveira Schneider
+- Added HasNaN for debugging purposes.
+Sep 15, 2004 - Bruno de Oliveira Schneider
+- File created.

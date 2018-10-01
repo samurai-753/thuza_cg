@@ -1,0 +1,17 @@
+May 31, 2006 - Bruno de Oliveira Schneider
+- Renamed Transform(...) to ApplyTransform because it was conflicting with Transform class.
+- General renaming to account for project rename (VPAT->V-ART).
+Oct 08, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Changed the type of control points from "VPVertex3D" to "VPPoint4D" in order
+  to compute geometrical transformations easier.
+- Changed the type of "controlPoints" from pointer (C vector) to STL vector in
+  order to enclose memory management control.
+- Changed "controlPoints" visibility from "private" to "protected", so that
+  derived classes may allocate space freely.
+- Removed constructors and the destructor (this is an abstract class).
+- Removed "Render" method which was not implemented.
+- Removed "vp" prefix from every method name.
+- Removed "#include <stdio.h>" from implementation file.
+Aug 10, 2000 - Anderson Maciel
+- Classes declaration.

@@ -1,0 +1,60 @@
+Bruno de Oliveira Schneider
+- Added void Reconfigure(const Point4D&, const Point4D&).
+May 30, 2007 - Bruno de Oliveira Schneider
+- Changed "Joint* GetOwnerJoint()" to "Joint* GetOwnerJoint() const".
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Now, the copy constructor calls MemoryObj copy Constructor.
+Jan 19, 2007 - Bruno de Oliveira Schneider
+- In "DrawInstanceOGL", "width" is now a bit larger.
+Nov 23, 2006 - Bruno de Oliveira Schneider
+- Bug fix: operator= replaced by CopyMatrix in GetLim(Transform*) and in
+  ApplyTransformTo(Transform*).
+- Added "void XmlPrintOn(std::ostream&, unsigned int) const".
+Jun 01, 2006 - Bruno de Oliveira Schneider
+- Removed unimplemented protected method setAxis(Vector3D).
+- Removed references to Vector3D.
+- General renaming to account for project rename (VPAT->V-ART).
+May 25, 2006 - Dalton Reis
+- Added #include <algorithm>, for the method find.
+May 17, 2006 - Bruno de Oliveira Schneider
+- Added some documentation.
+- Reverted Ughini's changes to destructor. The instance list must be updated.
+Abr 03, 2006 - Bruno de Oliveira Schneider
+- Constructors now update the instance list.
+- Added destructor.
+- Added MoveTo(float, unsigned int), ClearPriorities and instanceList.
+Mar 17, 2006 - Bruno de Oliveira Schneider
+- Now, axis is normalized when set.
+- DrawInstanceOGL now avoids drawing degenerated axes.
+Mar 16, 2006 - Bruno de Oliveira Schneider
+- Added code to draw DOFs if symbol VISUAL_JOINTS is defined.
+- Removed Transform(const VPTransform&).
+- Attributes position and axis changed from private to protected.
+- VPDof::GetLim() now returns a constant reference to lim.
+Mar 09, 2006 - Andreia Schneider
+- Fixed a bug in method MoveTo.
+Oct 31, 2005 - Bruno de Oliveira Schneider
+- Methods that do not change the DOF and do not return pointers are now declared const.
+Jun 02, 2005 - Bruno de Oliveira Schneider
+- VPDof(const VPPoint4D&, const VPPoint4D&, float, float) now computes LIM.
+- GetDescription is now inline and returns by reference.
+- DOFs are now derived from memory objects. The programmer no longer needs to keep track
+  of all DOFs in a body.
+- Added some documentation.
+Oct 08, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned (tabs replaced by spaces, excessive spaces
+  removed, etc.) because tabs and spaces were mixed together.
+- Removed "#include <stdio.h>". Removed "PrintLim" method.
+- Removed "vp" prefix from every method name.
+- Moved "using namespace std" from header file to implementation file.
+- Changed type of "lim" attribute from "VPMatrix" to "VPTransform".
+- Changed type of "axis" and "position" attributes to VPPoint4D.
+- Changed "SetDescription" to avoid passing a string by value and removed the
+  "char*" version because it is not needed.
+- Changed "GetEvoluta".
+- Commented out "bim" attribute which was never used.
+- Commented out "GetBim()".
+- Added "Move" (inline) and "Transform(const VPTransform&)" methods.
+- Added copy constructor and operator=.
+Feb 23, 2001 - Anderson Maciel
+- Class and new methods declaration.

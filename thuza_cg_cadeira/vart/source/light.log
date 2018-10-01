@@ -1,0 +1,48 @@
+Sep 9, 2008 - Kao Cardoso Felix
+- Added a transform property to the light and methods to access it.
+Aug 7, 2008 - Kao Cardoso Felix
+- Created an protected method to generate the OpenGL light ID to use in children
+  classes. 
+- Changed the location attribute access modifier to protected.
+Feb 23, 2007 - Leonardo Garcia Fischer
+- Modified some constants in the code, from double to float format (ie. 0.7 to 0.7f), 
+  to avoid some compiler warnings ("conversion from double to float").
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added virtual SceneNode * Copy() method implementation.
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Added DrawForPicking().
+Jun 01, 2006 - Bruno de Oliveira Schneider
+- Removed references to Point3D and Vector3D.
+- General renaming to account for project rename (VPAT->V-ART).
+May 08, 2006 - Dalton Reis
+- Added a RecursiveBoundingBox method
+Jan 10, 2005 - Bruno de Oliveira Schneider
+- Fixed DoxyGen class description.
+- Removed a few "std::" wich were not needed.
+- Changed attributes of the SUN to make it brighter.
+Oct 13, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Moved "using namespace std" from header file to implementation file.
+- Removed "vp" prefix from every method name.
+- Added "location" attribute. THIS MAKES THE VPDirectionalLight DECREPTED!
+- Added the methods: SetLocation, GetLocation.
+- Added "(const std::string&, float, float, const VPColor&, const VPPoint4D&)"
+  constructor, "SUN()" and "BRIGHT_AMBIENT()".
+- Added "const" modifier wherever possible.
+- Added a copy constructor and "operator=" because light is not static.
+- Added DrawOGL method.
+- Lights are now derived from VPSceneNode.
+- Removed constant symbols "ON" and "OFF".
+Jun 28, 2000 - Anderson Maciel
+- Classes declaration and methods addition.
+Jun 08, 2000 - Luciana Porcher Nedel
+- Classes declaration.
+Jun 19, 2000 - Rodrigo Berggevist Martins
+- Classes declaration.
+- Constructors and some methods implementation.
+May 30, 2000 - Isabel Harb Manssour
+- Constructors and some methods implementation.
+May 22, 2000 - Isabel Harb Manssour
+- Classes declaration.

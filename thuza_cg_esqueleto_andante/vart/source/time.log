@@ -1,0 +1,20 @@
+, 2008 - Bruno de Oliveira Schneider
+- Precision enhanced in Time::Set(). Some computers had precision problems in the calculation.
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added a copy constructor.
+Oct 09, 2007 - Bruno de Oliveira Schneider
+- Fixed operator<< implementation (works with g++ 4.2).
+May 30, 2007 - Bruno de Oliveira Schneider
+- Methods WholeMicroseconds, WholeMilliseconds and WholeSeconds are now const.
+- Operators -, >=, <=, > and < are now const.
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Added operator-=(const Time&).
+Jun 30, 2006 - Bruno de Oliveira Schneider
+- Added operator+= .
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Moved operator<< into VART namespace.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Mar 23, 2006 - Bruno de Oliveira Schneider 
+- Windows code created by Cleber Souza Ughini.
+- File created.

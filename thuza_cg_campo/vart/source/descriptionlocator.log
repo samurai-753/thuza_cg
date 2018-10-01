@@ -1,0 +1,4 @@
+- Changed "OperateOn(SceneNode*)" to "OperateOn(const SceneNode*)".
+- Now handles the new attribute nodePtr from SNLocator.
+Jul 30, 2008 - Bruno de Oliveira Schneider
+- File created.

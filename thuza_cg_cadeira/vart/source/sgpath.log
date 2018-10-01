@@ -1,0 +1,13 @@
+ Bruno de Oliveira Schneider
+- void GetTransform(Transform*) changed to void GetTransform(Transform*)
+- Added SceneNode* FrontPtr().
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added SGPath& operator=(const SGPath& path).
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Changed GetTransform.
+Sep 12, 2006 - Bruno de Oliveira Schneider
+- Added Clear(), PushFront(SceneNode*), operator <<.
+- "Transform* GetTransformToPath()" is now "void GetTransform(Transform*)".
+- Removed BuildSGPath: it should be in class "Scene".
+Ago ??, 2006 - Andreia Schneider
+- Created class.

@@ -1,0 +1,16 @@
+May 30, 2007 - Bruno de Oliveira Schneider
+- Attributes hasOvershoot and hasNoise are now initialized by Initialize (not 
+  by constructor anymore).
+- Replaced SetPositionalError methods with 
+  void SetOvershoot(float, float) and void SetOffset(float).
+- Changed Noise(): Added a protection against removing noise in short time span.
+- Activation now computes new noise value. Noise with length near one, was not
+  being recomputed as the action cycles around.
+- Overshoot is now a percentage of total movement.
+Sep 28, 2006 - Bruno de Oliveira Schneider
+- This class now deals with interpolation errors (overshoot and offset) to
+  help creating natural movements.
+- Added protected static attributes (defaultNoiseAmplitude, defaultNoiseWaveLenght,
+  defaultOvershoot, defaultOffset and defaultPeakTime) for easier initialization.
+Jul 10, 2006 - Bruno de Oliveira Schneider
+- File created.

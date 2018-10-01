@@ -1,0 +1,69 @@
+Oct 17, 2012 - Bruno de Oliveira Schneider
+- Added methods for "release key" events (key up).
+- Joined special and normal keys (as in GLUT) in the same method.
+- Deprecated HandleKey and HandleSpecialKey.
+May 14, 2009 - Bruno de Oliveira Schneider
+- Added "static void RedisplayAll()".
+- SetScene now sets the viewer camera (if unset).
+- Added "void SetCamera(Camera* camPtr)".
+- Added "Camera* cameraPtr" attribute, because we want different viewers showing the same scene from
+  different points of view. The default camera is set at SetScene, from scene's current camera.
+- Added support for special keys (arrows, Fn, etc.) handling. Thanks for Cleiton Luiz Rocha Teodoro.
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added #include <cstdlib>
+May 30, 2007 - Bruno de Oliveira Schneider
+- Fixed a bug in SetDrawHandler.
+- SetSize now changes aspect ratios of cameras if needed.
+- Changed resize callbacks so that visible volume is also affected.
+Mar 16, 2006 - Bruno de Oliveira Schneider
+- Added ClearOGLBuffers() because VPScene no longer clears the buffers.
+Dec 21, 2005 - Bruno de Oliveira Schneider
+- Added UseNextCamera().
+- Added GetCurrentCamera().
+- Fixed ResizeCBs - they now update "width" and "height".
+Oct 06, 2005 - Bruno de Oliveira Schneider
+- Added HandleKey to make maintenance easier.
+- Added autoNavigationEnabled and autoRespondKeys attributes.
+- Added attributes width and height. Added GetWidth and GetHeight.
+- Added virtual destructors.
+- Fixed SetIdleHandler: now checks if the pointer is valid.
+- Draw handlers are now called after the scene is drawn. This fixes problems when
+  reading the frame buffer and z buffer.
+- Added constructor with size. Common parts of constructors were moved to CommonConstructor,
+  to make code easier to maintain.
+Jun 13, 2005 - Bruno de Oliveira Schneider
+- The constructor now enables vertex arrays, fixing a bug on showing mesh objects with
+  multiple viewers.
+- Fixed current window management. Most methods now save the current window, then make
+  glut calls, then restore the current window. -> The Idle method might need it too.
+- Fixed SetTitle (now changes the icon title as well).
+- Moved glutInitDisplayMode into Init.
+Jun 07, 2005 - Bruno de Oliveira Schneider
+- Renamed SetIdleHandlerPointer to SetIdleHandler.
+- Handlers now have pointers to the viewer they are attached to.
+- Added SetTitle, Iconify and PostRedisplay.
+- The viewer now supports mouse handlers and uses the new mouse control class.
+Apr 14, 2005 - Bruno de Oliveira Schneider
+- Changed DrawCB0 to check for errors in the drawing routine because
+  a lot of pleople were compiling V-ART without the rendering engine symbol. The
+  new code should give a good hint on what to look for.
+- Changed the list of keyboard handlers into a single handler, which required
+  changing AddKbHandler to SetKbHandler.
+- Changed the draw function callback into a handler object, turning SetDrawCallBack
+  into SetDrawHandler.
+Dec 15, 2004 - Bruno de Oliveira Schneider
+- Added Init. This static method should be called before creating instances.
+  The second number in the version id has been incremented to show that old
+  applications should be updated.
+- Added SetPosition and SetSize.
+- Fixed Idle function management. Now a global idle function calls every
+  instance's idle fuction.
+- Added autoChangeCameraAspect and resize callbacks.
+- Added SetDrawCallBack, onDraw and onDrawUserPtr.
+- Added user defined idle time handling (idleHndPtr, SetIdleHandlerPointer, etc.).
+- Added redrawOnIdle and walkStep.
+- Added modifiers (ALT, CTRL, SHIFT) to enhance built-in camera movement. MouseCB? were
+  changed, constants NO_BUTTON, LEFT_BUTTON, RIGHT_BUTTON, MIDDLE_BUTTON, SHIFT_KEY,
+  CTRL_KEY, ALT_KEY and Idle().
+Sep 24, 2004 - Bruno de Oliveira Schneider
+- File created.

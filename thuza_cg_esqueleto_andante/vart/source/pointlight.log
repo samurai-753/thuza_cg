@@ -1,0 +1,23 @@
+Aug 7, 2008 - Kao Cardoso Felix
+- Changed some method signatures (mainly related to attenuation 
+  factors that are now 3 separated float values instead of an array).
+- Included a DrawOGL method that effectively sets the PointLight position
+  in space and attenuation factors with OpenGL calls.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+September 16, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "vp" prefix from every method name.
+- Removed "location" attribute because it was added to VPLight.
+- Removed the methods: SetLocation, GetLocation.
+March 08, 2001 - Isabel H. Manssour
+- Constructor declaration addition.
+August 10, 2000 - Anderson Maciel
+- Classes declaration and methods addition.
+June 19, 2000 - Rodrigo Berggevist Martins
+- Classes declaration.
+- Constructors and some methods implementation.
+June 08, 2000 - Luciana Porcher Nedel
+- Classes declaration.
+May 22, 2000 - Isabel Harb Manssour
+- Classes declaration.

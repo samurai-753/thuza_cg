@@ -1,0 +1,15 @@
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Jan 10, 2005 - Bruno de Oliveira Schneider
+- Fixed DoxyGen class description.
+- Removed previously commented methods: GetPointAsPoint and GetPointAsVertex.
+Oct 08, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "vp" prefix from every method name.
+- Removed "#include <stdio.h>" from implementation.
+- Added "dealocateControlPoints" attribute.
+- Created destructor (old one did not free memory and was commented out).
+- Added "GetPoint" method.
+- Most methods changed to reflect the changes in VPCurve.
+Aug 10, 2000 - Anderson Maciel
+- Classes declaration.

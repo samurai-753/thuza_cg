@@ -1,0 +1,8 @@
+- Joint actions are now inserted in priority reverse order in the active instances list. Added
+  void Activate() and void AddToActiveInstancesList().
+- Added "void DeactivateDofMovers()".
+- Added DofMover* SearchDofMover(Joint*, Joint::DofID).
+- Ported void GetFinalTimes(std::list<float>*) from old Action class.
+- Added "std::ostream& operator<<(std::ostream&, const JointAction&)".
+Jul 09, 2008 - Bruno de Oliveira Schneider 
+- Class created.

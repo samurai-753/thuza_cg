@@ -1,0 +1,14 @@
+// ChangeLog
+// Sep 11, 2006 - Bruno de Oliveira Schneider
+// - Attribute buttonsState now has 5 flags to make room for WHEEL_UP and
+//   WHEEL_DOWN buttons.
+// Dec 21, 2005 - Bruno de Oliveira Schneider
+// - Added viewerPtr to ClickHandler and MotionHandler.
+// - Removed SetController from ClickHandler because the controller needs only to be
+//   set at VPMouseControl::SetClickHandler.
+// Oct 06, 2005 - Bruno de Oliveira Schneider
+// - Added viewerPtr and SetOwner.
+// - Added mouseCtrlPtr and viewerPtr to DragHandler.
+// - Added virtual destructors.
+// May 27, 2005 - Bruno de Oliveira Schneider 
+// - File created.

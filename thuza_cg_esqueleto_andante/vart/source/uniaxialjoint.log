@@ -1,0 +1,16 @@
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added virtual Dof* AddDof(const Point4D& vec, const Point4D& pos, float min, float max).
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added operator '=', to copy data between joints.
+- Added copy constructor.
+- Added virtual SceneNode * Copy() method implementation. Note that in this method, each copied dof points to the copy of joint, differently of copy constructor and operator '='.
+Sep 27, 2006 - Bruno de Oliveira Schneider
+- Fixed a bug in AddDof.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Fev 17, 2006 - Andreia Schneider
+- Implemented SetFlexionTo, Flex, reimplemented AddDof and removed older methods.
+Jan 15, 2001 - Anderson Maciel
+- Class and new methods declaration.
+Aug 10, 2000 - Anderson Maciel
+- Methods implementation.

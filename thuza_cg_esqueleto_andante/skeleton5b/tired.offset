@@ -1,0 +1,7 @@
+bellyJoint FLEXION 0.078
+thoraxJoint FLEXION 0.224
+chestJoint FLEXION 0.124
+headJoint ADDUCTION 0.06
+neckJoint FLEXION 0.13
+L_shoulderJoint FLEXION 0.5
+R_shoulderJoint FLEXION 0.5

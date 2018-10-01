@@ -1,0 +1,12 @@
+ - Bruno de Oliveira Schneider
+ - DrawInstanceOGL() now checks whether the dot is visible.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added a copy constructor.
+- Added operator '='.
+- Added virtual VART::SceneNode * Copy() method implementation.
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Dec 19, 2005 - Bruno de Oliveira Schneider 
+- File created.

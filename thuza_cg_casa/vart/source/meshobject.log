@@ -1,0 +1,95 @@
+Nov 08, 2016 - Bruno Schneider
+- SetVertices(const std::vector<VART::Point4D>&) now fills vertVec (not only vertCoordVec).
+Apr 13, 2015 - Bruno de Oliveira Schneider
+- ReadVertex now returns bool.
+- Started exception handling in this class.
+May 06, 2014 - Bruno de Oliveira Schneider
+- Added void AddMesh(const Mesh&).
+- void SetVertices(const std::vector<Point4D>&) no longer creates an unoptimized mesh.
+  I belived unoptimized meshes are not needed.
+Sep 26, 2013 - Bruno de Oliveira Schneider
+- Fixed initial mesh with no type in ReadFromOBJ.
+Sep 24, 2013 - Carlos Drury, Rodrigo T. M. Caldas, Thiago P. Nobre & Bruno Schneider
+- Improved handling of vertex/texture/normal in ReadFromOBJ.
+- MeshObject::MakeBox is deprecated in favor of VART::Box.
+- Started an implementation for printing a MeshObject as text (operator<<).
+Sep 23, 2013 - André Veiga S. Tonelli, Raphael Luís T. Costa, Rhyad Kryn S. Janse & Bruno Schneider
+- ReadFromOBJ now handles faces with more than 3 vertices.
+Oct 01, 2012 - Bruno de Oliveira Schneider
+- Added some documentation.
+- Reads and ignores "Ni" values in MTL files now (ReadMaterialTable).
+- Now handles omitted texture indexes on faces (ReadFromOBJ).
+- Now handles normal indexes that were reused between objects in a obj file (ReadFromOBJ).
+Oct 09, 2007 - Bruno de Oliveira Schneider
+- Added void SmallerVertex(Point4D* resultPtr).
+- Fixed some documentation.
+- Marked GetVertexMedia() as deprecated.
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Converted 'tabs' to 'spaces' on the files.
+- Reverted the textCoordVec atribute from double to float.
+- Corrected a error in ReadFromOBJ() method documentation.
+- Changed calls from VART::XmlBase::GetPathFromString() method to the new class
+  VART::File::GetPathFromString().
+Mar 05, 2007 - Leonardo Garcia Fischer
+- Changed "static void ReadFromOBJ(const std::string& filename, std::list<MeshObject*>* resultPtr)"
+  to "static bool ReadFromOBJ(const std::string& filename, std::list<MeshObject*>* resultPtr)".
+Feb 23, 2007 - Leonardo Garcia Fischer
+- Added "void SetNormals(const std::vector<Point4D>& normalVec)"
+- Modified the attribute textCoordVec from type std::vector<float> to std::vector<double>.
+- Modified "MeshObject::MakeBox" method, to create the texture vertices with the box.
+- Modified "MeshObject::DrawInstanceOGL()", to draw the texture with the mesh, if its the case.
+- Modified "MeshObject::ReadFromOBJ", to read correctly the texture vertices.
+- Modified "MeshObject::ReadMaterialTable" method, to read textures with the materials.
+Feb 13, 2007 - Leonardo Garcia Fischer
+- Now, the bounding box and the recursive bounding box can be draw if 'show' attribute
+  is false.
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added #include "vart/xmlbase.h"
+- The method MeshObject::ReadFromOBJ(const string& filename, list<VART::MeshObject*>* resultPtr)
+  now can load an .obj file from an directory different from current directory (that
+  the programmer application runs).
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added virtual VART::SceneNode * Copy() method implementation.
+- The copy constructor now calls the copy operator.
+- The copy operator now calls the GraphicObj copy operator.
+Jul 04, 2006 - Bruno de Oliveira Schneider
+- Changed TABs into spaces.
+- Fixed compiler (g++) errors and warnings.
+Jun 23, 2006 - Cleber Souza Ughini
+- Added public Method ComputeSubBBoxes, GetSubBBoxes.
+- Added private methods subDivideBBox, computeNewSubBBox.
+- Added private atribute subBBoxes.
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Changed ComputeBoundingBox( VART::Transform* trans, VART::BoundingBox* bb ) into
+  ComputeBoundingBox(const Transform& trans, BoundingBox* bbPtr).
+May 31, 2006 - Bruno de Oliveira Schneider
+- Renamed Transform(...) to ApplyTransform because it was conflicting with Transform class.
+- General renaming to account for project rename (VPAT->V-ART).
+- DrawInstanceOGL now checks if it should draw the recursive bounding box.
+- Removed references to bBoxShow.
+Feb 16, 2006 - Andreia Schneider
+- DrawInstanceOGL modified to allow the bounding box to be drawn.
+Jan 27, 2006 - Bruno de Oliveira Schneider
+- Fixed some bugs in ReadFromOBJ.
+- Added sizeOfNormals class attribute.
+- Added GetVerticesCoordinates(), GetVertex() and SetVertex().
+Jun 22, 2005 - Bruno de Oliveira Schneider
+- Fixed and enhanced documentation.
+Jun 13, 2005 - Bruno de Oliveira Schneider
+- Moved code to enable vertex arrays from constructor into vpviewerglutogl.
+- Added IsEmpty.
+- DrawInstanceOGL now respects the "show" attribute.
+Jan 31, 2005 - Bruno de Oliveira Schneider
+- Added faceCounter to ReadFromOBJ.
+Dec 16, 2004 - Bruno de Oliveira Schneider
+- Added Clear, MakeBox, GetYProjection, SetMaterial, DrawInstanceOGL and GetID.
+- Attribute vertVec was a vector of pointer to points and is now a vector of
+  points. Work with the ConvexHull class showed that it would be better if a
+  MeshObject could manage its own storage. Accordingly, normVec had its type
+  changed.
+- Fixed DrawInstanceOGL(), so that it now works with unoptimized meshes.
+- Added SetVertices, AddFace and ComputeBoundingBox.
+- Added Transform, MergeWith, ReadFromOBJ and ReadMaterialTable.
+- Added a copy constructor and operator=.
+Sep 22, 2004 - Bruno de Oliveira Schneider
+- File created.

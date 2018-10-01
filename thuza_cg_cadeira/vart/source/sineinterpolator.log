@@ -1,0 +1,10 @@
+Jun 28, 2006 - Bruno de Oliveira Schneider
+- Changed GetValue(float) to GetValue(float, float, float) so that instead of
+  returning an interpolation index, it computes the new DOF position. This
+  should enable noisy interpolation even if its position range is zero.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Apr 03, 2006 - Bruno de Oliveira Schneider 
+- GetValue is now "const".
+Mar 28, 2006 - Bruno de Oliveira Schneider 
+- File created.

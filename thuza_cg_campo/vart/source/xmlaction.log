@@ -1,0 +1,55 @@
+Aug 29, 2008 - Bruno de Oliveira Schneider
+- Marked as DEPRECATED.
+  This class has moved to XmlJointAction because of the new action hierarchy to accommodate new
+  action types. Coded cleaned.
+May 30, 2007 - Bruno de Oliveira Schneider
+- Changed ParseDofMovement, error parameters are now passed through class' 
+  default values.
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Moved the method from XmlAction::Copy() to Action::Copy().
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Modified "#include <sax/SAXParseException.hpp>" to 
+  "#include <xercesc/sax/SAXParseException.hpp>"
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added XmlAction * Copy( VART::SceneNode& targetNode ) method implementation.
+Jan 23, 2007 - Leonardo Garcia Fischer
+- changed delete [] to XERCES_CPP_NAMESPACE::XMLString::release, to avoid some errors 
+  in windows environment.
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Added "bool LoadFromFile(const std::string&, const SceneNode&)".
+- Changed "void LoadAnimation(const Scene&)" to "void LoadAnimation(const Source&)".
+- Added XmlAction::Source class.
+Nov 03, 2006 - Bruno de Oliveira Schneider
+- XmlAction now inherits the new XmlBase class.
+Oct 24, 2006 - Bruno de Oliveira Schneider
+- Fixed bug: one joint mover was created for every dof mover.
+- ParseFile(...) and LoadAnimation(...) changed from public to protected.
+- Renamed ParserFile to ParseFile.
+- ParseDofMovement() now tests for unknown dof IDs.
+- Changed "bool LoadFromFile(char*, const Scene&)" to
+  "bool LoadFromFile(const char*, const Scene&)".
+- New parsing: Added "error" element for "dof_movement" in DTD.
+- DTD file is now called "vartAnimation.dtd".
+Jul 10, 2006 - Bruno de Oliveira Schneider
+- There is now a single SineInterpolator and LinearInterpolator that is shared
+  among all joint movers. Other interpolators are still allocated on a per joint
+  movement basis, because I'm not sure they could be shared.
+- Code for parsing the dof movements was separated from LoadAnimation(...) into
+  the new method ParseDofMovement(...) for easier reading.
+- Added some code comments.
+- Changed default priority to 1, so that if the priority is not set, the action
+  will still run.
+Jul 04, 2006 - Bruno de Oliveira Schneider
+- Cleaned "#include" section. Includes should be in the implementation file
+  unless needed by the headers.
+Jun 30, 2006 - Andreia Schneider
+- reading of natural interpolator implemented.
+- changed the method LoadAnimation because changes of DTD file.
+- Fixed reading of interpolators.
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Fixed declaration for operator<<.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Changed LoadFromFile(char*, VPXmlScene*) to LoadFromFile(char*, const VPScene&).
+Apr  4, 2006 - Andreia Schneider
+- Methods declaration.

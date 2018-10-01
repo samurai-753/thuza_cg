@@ -1,0 +1,28 @@
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added void ModifyDofMovers(DMModifier& modifier).
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Converted 'tabs' to 'spaces' on the files.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added const VART::Joint* GetAttachedJoint() method.
+- Added float GetDuration() method.
+- Added const Interpolator * GetInterpolator() method.
+- Added void CopyFrom( VART::JointMover& jointMover, VART::Joint* targetJoint ) method.
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Added GetFinalTimes(std::list<float>*).
+- Added SetInterpolator(const Interpolator&).
+- Added operator << .
+- Added MultiplyTimes(float).
+- Changed AddDofMover(Joint::DofID, float, float, float, float, float) to
+  NoisyDofMover* AddNoisyDofMover(Joint::DofID, float, float, float). This
+  should allow the XmlAction to create noisy dof movers while keeping some
+  of its attibutes as default values.
+Jul 10, 2006 - Bruno de Oliveira Schneider
+- Added AddDofMover(Joint::DofID, float, float, float, float, float) to add
+  noisy dof movers.
+Jul 03, 2006 - Bruno de Oliveira Schneider
+- Added "minimumDuration".
+- Fixed an animation bug in ReactivateDofMovers.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Mar 22, 2006 - Bruno de Oliveira Schneider 
+- File created.

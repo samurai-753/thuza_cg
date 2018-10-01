@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE action SYSTEM "vartAnimation.dtd">
+<action action_name="right_front" speed="1" cycle="false">
+  <joint_movement joint_name="R_thighJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.628454">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.357143">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.380952">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="L_thighJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.94045">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.357143">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.380952">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="L_legJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.11">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="R_legJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.062114">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="L_footJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.305515">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.714286">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="L_footfingersJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.551789">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="R_footJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="1">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.714286">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="R_armJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.62963">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.940346">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.37931">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="R_forearmJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.857033">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="L_armJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.62963">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.65235">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.37931">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="bellyJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.53">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="thoraxJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.559999">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+  <joint_movement joint_name="neckJoint" duration="1.9">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="1" finalPosition="0.563999">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="ADDUCTION" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+    <dof_movement dofID="TWIST" initialTime="0" finalTime="1" finalPosition="0.5">
+      <noise amplitude="0.01" length="1"/>
+    </dof_movement>
+  </joint_movement>
+</action>

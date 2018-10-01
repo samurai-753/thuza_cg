@@ -1,0 +1,14 @@
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Actualized MemoryObj() method description. The autoDelete atribute is initialized with 
+  'false', but the brief said that its initialized with 'true'.
+- Added a CopyConstructor.
+Jun 02, 2006 - Bruno de Oliveira Schneider
+- autoDelete initialization reverted to false. Auto deletion was trying to delete members
+  of other objects, wich caused error messages like "free(): invalid pointer".
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- autoDelete is now initialized with "true".
+May 18, 2005 - Bruno de Oliveira Schneider
+- Added some documentation.
+Nov 29, 2004 - Bruno de Oliveira Schneider
+- File created.

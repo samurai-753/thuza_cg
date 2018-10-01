@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE action SYSTEM "vartAnimation.dtd">
+<action action_name="breathe" speed="1" cycle="true">
+  <joint_movement joint_name="bellyJoint" duration="4">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="0.5" finalPosition="0.47"/>
+    <dof_movement dofID="FLEXION" initialTime="0.5" finalTime="1" finalPosition="0.5"/>
+  </joint_movement>
+  <joint_movement joint_name="thoraxJoint" duration="4">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="0.5" finalPosition="0.45"/>
+    <dof_movement dofID="FLEXION" initialTime="0.5" finalTime="1" finalPosition="0.5"/>
+  </joint_movement>
+  <joint_movement joint_name="chestJoint" duration="4">
+    <interpolation type="ease-in_ease-out"/>
+    <dof_movement dofID="FLEXION" initialTime="0" finalTime="0.5" finalPosition="0.45"/>
+    <dof_movement dofID="FLEXION" initialTime="0.5" finalTime="1" finalPosition="0.5"/>
+  </joint_movement>
+</action>

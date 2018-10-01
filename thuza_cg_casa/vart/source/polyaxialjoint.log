@@ -1,0 +1,24 @@
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added an copy constructor.
+- Added an copy operator.
+- Added virtual VART::SceneNode * Copy() method implementation.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Apr 05, 2006 - Bruno de Oliveira Schneider
+- Added an empty virtual destructor.
+Mar 06, 2006 - Andreia Schneider
+- Added methods to flex, twist and adduct a joint.
+Jun 22, 2005 - Bruno de Oliveira Schneider
+- Fixed documentation: file and version commands were wrong and were confusing doxygen.
+- Replaced tabs with spaces for proper indentation.
+- Fixed date on changelog entry below. Fixed assert include (from C style to C++).
+Jun 09, 2005 - Marta Becker Villamil
+- Code typing has been cleaned. Doxygen documentation started.
+- Removed 'vp' preffix of every method name.
+- Reimplemented "AddDof(VPDof*)" according to changes in VPDof and VPJoint.
+- Commented out old constructors because they leak memory and because of changes
+  in VPJoint and VPDof.
+Jan 15, 2001 - Anderson Maciel
+- Class and new methods declaration.
+Jan 16, 2000 - Anderson Maciel
+- Methods implementation.

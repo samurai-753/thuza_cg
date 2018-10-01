@@ -1,0 +1,54 @@
+- Added "void GetDofs(std::list<Dof*>* dofListPtr)".
+- Changed "GetDof(DofID)" to "GetDof(DofID) const".
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added std::istream& operator>>(std::istream& input,  Joint::DofID& dofId).
+- XmlPrintOn now checks the new "recursivePrinting" attribute from SceneNode.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Now, the copy constructor calls the copy operator.
+- Added virtual VART::SceneNode * Copy() method implementation.
+- Added virtual void CopyDofListFrom( VART::Joint& joint ) method implementation. 
+  Here, the joint list of joint is copied to 'this' instance, setting the ownerJoint 
+  attribute of the copied dofs to 'this' instance.
+Nov 23, 2006 - Bruno de Oliveira Schneider
+- GetNumDofs is now const and inline.
+- Added "virtual void XmlPrintOn(std::ostream&, unsigned int) const".
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Added copy constructor and operator=.
+- Added operator<< for Joint::DofID.
+- Added DofID GetDofID(const Dof*) const.
+- Added HasDof(DofID).
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Added MoveDof.
+Mar 24, 2006 - Andreia Schneider
+- Added method to put the joint in a rest position.
+Mar 16, 2006 - Bruno de Oliveira Schneider
+- Added code to draw DOFs when symbol VISUAL_JOINTS is defined.
+- Removed TransformDofs(VPDof*, const VPTransform&).
+Feb 17, 2006 - Andreia Schneider
+- Included cassert library.
+Oct 27, 2005 - Bruno de Oliveira Schneider
+- Added GetDof.
+- Removed #include "vart/matrix.h".
+- Removed unused MAXDOF constant.
+May 18, 2005 - Bruno de Oliveira Schneider
+- Added destructor that deletes DOFs marked as autoDelete.
+Jan 10, 2005 - Bruno de Oliveira Schneider
+- Added "#include <algorithm>" because MS VC++ users reported compilation errors.
+Oct 08, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned (tabs replaced by spaces, excessive spaces
+  removed, etc.) because tabs and spaces were mixed together.
+- Removed "#include <stdio.h>" from implementation file. Commented out 
+  "PrintLim" method.
+- Moved "using namespace std" from header file to implementation.
+- Removed 'vp' preffix of every method name.
+- Turned VPJoint a subclass of VPTransform. AS A RESULT, MOST ATTRIBUTES AND
+  METHODS WERE REMOVED.
+- Reimplemented "MakeLim()".
+- Added "TransformDofs(VPDof*, const VPTransform&)" so that when one DOF changes
+  it may changed its siblings. This is temporary behaviour - how changes should
+  be carried to the siblings is still an open issue!
+Aug 10, 2000 - Anderson Maciel
+- Class and new methods declaration.

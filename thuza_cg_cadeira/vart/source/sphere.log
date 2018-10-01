@@ -1,0 +1,33 @@
+Feb 23, 2007 - Leonardo Garcia Fischer
+- Modified implementaion of "Sphere::DrawInstanceOGL()", to draw the texture vertices
+  and to use the "show" atribute (declared in VART::GraphicObj class).
+Feb 13, 2007 - Leonardo Garcia Fischer
+- Now, the recursive bounding box can be draw.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added a copy constructor.
+- Added a copy operator.
+- Added virtual VART::SceneNode * Copy() method implementation.
+Oct 19, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Removed automatic activation of ComputeRecursiveBoundingBox() everywhere.
+- Removed reference to bBoxShow.
+May 08, 2006 - Dalton Reis
+- Use of the ComputeRecursiveBoundingBox method instead of attributing bbox current.
+- It verifies if bounding box is visible. 
+Jun 16, 2005 - Andreia Schneider
+- Bounding box computation is now automatic
+Dec 07, 2004 - Bruno de Oliveira Schneider
+- Added ComputeBoundingBox().
+Sep 30, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started. Indentation fixed.
+- Removed "vp" prefix from every method name.
+- Removed (empty) vpRender method.
+- Added DrawInstanceOGL method.
+- Added code for initializing transform matrices in constructors.
+- Added "material" attribute and related Get/Set methods.
+Oct 10, 2000 - Anderson Maciel
+- Methods atualization.
+Aug 10, 2000 - Anderson Maciel
+- Classes declaration.

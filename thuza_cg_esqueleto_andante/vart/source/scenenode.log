@@ -1,0 +1,57 @@
+- Changed all "Locate..." and "Traverse..." methods. Now they are const methods.
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Changed both FindPathTo, so that re-implementing both Traverse...First() and Locate...First()
+  will affect FindPathTo.
+- Added virtual void LocateBreadthFirst(SNLocator* locatorPtr) because sometimes we do not
+  want to traverse the whole scene graph.
+- Added virtual void LocateDepthFirst(SNLocator* locatorPtr).
+- TraverseDepthFirst() and TraverseBreadthFirst() are now virtual methods.
+- Removed GetPathToNodeName.
+Oct 09, 2007 - Bruno de Oliveira Schneider
+- Added "bool DetachChild(SceneNode* childPtr)".
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added recursivePrinting (static public) attribute.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added virtual SceneNode * Copy() method declaration. All derivated classes must reimplement this method.
+- Added virtual SceneNode * RecursiveCopy() method implementation.
+Dec 13, 2006 - Bruno de Oliveira Schneider
+- Added "void TraverseDepthFirst(SNOperator*)" and 
+  "void TraverseBreadthFirst(SNOperator*)".
+- GetNodeTypeList marked as deprecated because it does not obey parameter
+  convention.
+- GetChilds marked as deprecated and no longer inline.
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- GetPathToNodeName has been deprecated.
+- Added "bool FindPathTo(const std::string&, SGPath*) const" and
+  "bool RecursiveFindPathTo(const std::string&, SGPath*) const".
+- FindPathTo and RecursiveFindPathTo (for SceneNode*) are now const methods.
+- Added "virtual void XmlPrintOn(ostream&, unsigned int) const".
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Changed "SceneNode& operator=(SceneNode&)" to
+  "SceneNode& operator=(const SceneNode&)"
+Sep 12, 2006 - Bruno de Oliveira Schneider
+- Added FindPathTo(SceneNode*, SGPath*) and RecursiveFindPathTo(SceneNode*, SGPath*).
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Added DrawForPicking().
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Method RecursiveBoundingBox has been removed.
+- Added default case to GetNodeTypeList in order to pacify the compiler.
+Apr 20, 2006 - Cleber Souza Ughini
+- GetPathToNodeName created.
+Mar 09, 2006 - Bruno de Oliveira Schneider
+- Fixed some previous changelog items.
+- Removed debuging msgs from VPSceneNode::AddChild.
+Feb 17, 2006 - Andreia Schneider
+- Removed const of the childList and others VPSceneNode.
+Feb 16, 2006 - Bruno de Oliveira Schneider
+- Added FindChildByName
+May 12, 2005 - Bruno de Oliveira Schneider
+- Removed the "ID" suffix of every TypeID, added some underscores to the IDs.
+- GetDescription now returns by reference.
+Dec 15, 2004 - Bruno de Oliveira Schneider
+- Uncommented TypeID enum, added GetID() to start using ids.
+- This class is now derived from VPMemoryObj.
+- Added AutoDeleteChildren.
+Oct 04, 2004 - Bruno de Oliveira Schneider
+- File created.

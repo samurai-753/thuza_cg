@@ -1,0 +1,10 @@
+Jun 28, 2006 - Bruno de Oliveira Schneider
+- Changed GetValue(float) to GetValue(float, float, float) so that instead of
+  returning an interpolation index, it computes the new DOF position. This
+  should enable noisy interpolation even if its position range is zero.
+Jun 9, 2006 - Dalton Reis
+- Added ifdef necessary to windows to treat M_PI.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Apr 27, 2006 - Andreia Schneider 
+- File created.

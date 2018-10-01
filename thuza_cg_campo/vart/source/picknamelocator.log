@@ -1,0 +1,4 @@
+- Changed "OperateOn(SceneNode*)" to "OperateOn(const SceneNode*)".
+Jun 16, 2008 - Bruno de Oliveira Schneider
+- File created because of the new method for picking objects that also works on
+  AMD64.

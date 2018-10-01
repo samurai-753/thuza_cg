@@ -1,0 +1,17 @@
+Nov 03, 2008 - Bruno de Oliveira Schneider
+- Changed TempCString::GetValue(...) methods so that they return an error flag.
+- TempCString::GetValue(bool* valuePtr).
+- Added GetAttributeValue(...) methods.
+- Added XmlBase::TempCString's auto cast to float.
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Moved the method XmlBase::GetPathFromString to the new class VART::File.
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Modified "#include <sax/SAXParseException.hpp>" to 
+  "#include <xercesc/sax/SAXParseException.hpp>"
+- Added the "method XmlBase::GetPathFromString(const std::string& fileName)".
+Jan 23, 2007 - Leonardo Garcia Fischer
+- changed delete [] to XERCES_CPP_NAMESPACE::XMLString::release, to avoid some errors in windows environment
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Added some documentation.
+Oct 31, 2006 - Bruno de Oliveira Schneider
+- File created.

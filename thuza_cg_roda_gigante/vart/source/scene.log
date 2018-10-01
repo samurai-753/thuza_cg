@@ -1,0 +1,96 @@
+- UseNextCamera and UsePreviousCamera now return a pointer to the new current camera.
+- Marked GetCameras as deprecated.
+- Changed DrawOGL() to DrawOGL(Camera* cameraPtr = NULL) to make it easier for viewers to show a
+  scene using different cameras.
+- Marked GetObjectRec as deprecated.
+Aug 08, 2008 - Kao Cardoso Félix
+- Changed the order of the calls to DrawLightsOGL and (*currentCamera)->DrawOGL(), 
+  to fix a bug that caused the light to being not affected by the camera transform
+  at the first rendering of the scene.
+ Aug 07, 2008 - Bruno de Oliveira Schneider
+- Removed GetObjectTranformMatrix.
+- Added SceneNode* GetObject(unsigned int) as an auxiliary method for
+  void Pick(int, int, list<GraphicObj*>*). Need because of the new scheme for
+  converting names into pointers that also works on AMD64.
+May 30, 2007 - Bruno de Oliveira Schneider
+- Marked GetAllSceneTypeObject, GetAllSceneJoints and GetObjectTranformMatrix
+  as deprecated.
+- Added "void ChangeAllCamerasViewVolume(float, float)".
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added the method "Scene::SetCamerasAspectRatio(const std::string& 
+  cameraDescription, float newAspectRatio)".
+- Now, the method "Scene::MakeCameraViewAll()" make a better modification in
+  ortographic cameras.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added #include <windows.h> and #define WINGDI, to avoid errors on compilation 
+  under windows environment.
+Dec 06, 2006 - Bruno de Oliveira Schneider
+- Added "void XmlPrintOn(ostream&) const".
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Added "void Unreference(const SceneNode*)".
+Aug 28, 2006 - Bruno de Oliveira Schneider
+- Added Pick(int, int, list<GraphicObj*>*).
+- GetNumLights now returns size_t.
+Jul 03, 2006 - Dalton Reis
+- Unnecessary const in SetBBoxVisibility.
+Jul 03, 2006 - Dalton Reis
+- Added SetCamera, SetBoundingBox and SetBBoxVisibility.
+- MakeCameraViewAll now use GetGreaterEdge() of BoundingBox.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- GetObjectRec and GetObject are now const methods.
+- ComputeBoundingBox now checks the type of its children to call the right
+  bounding box method. Other ComputeBoundingBox's bugs fixed.
+- Removed bBoxShow because VPBoundingBox already has a visibility flag.
+- Some documentation added.
+May 17, 2006 - Dalton Reis
+- Added ProcessCenter in ComputeBoundingBox and changed for bool.
+May 08, 2006 - Dalton Reis
+- Added ComputeBoundingBox method.
+- It verifies if bounding box is visible.
+Apr 20, 2006 - Cleber Souza Ughini
+- GetObjectTranformMatrix created.
+Mar 16, 2006 - Bruno de Oliveira Schneider
+- GetBackgroundColor now returns a constant reference.
+- DrawOGL no longer clears OpenGL buffers. This should be done by viewer classes.
+Feb 17, 2006 - Andreia Schneider
+- Removed const from pointers in "objects" because when creating objects from
+  VPXml::LoadScene, one may need to search the scene graph for pointers.
+- Added method GetObjectRec.
+Jun 07, 2005 - Bruno de Oliveira Schneider
+- DrawOGL now checks for existence of a current camera.
+- Added description attribute and related Get/Set methods.
+Dec 15, 2004 - Bruno de Oliveira Schneider
+- DrawOGL is now virtual, allowing use of derived classes in the viewers.
+- The destructor now deletes objects and lights marked as "auto delete".
+- Added SetAllCamerasAspectRatio, ComputeBoundingBox and GetBoundingBox.
+- Removed lines of old commented coded to control scene changes.
+- AddLight(const VPLight&) now makes a copy of its parameter.
+- Added GetNumLights and MakeCameraViewAll.
+Oct 04, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started. Indentation fixed.
+- Moved "using namespace std" from header file to implementation file.
+- Removed "vp" prefix from every method name.
+- Changed the prototypes of GetLight, GetCamera and GetObject to avoid passing
+  a string by copy.
+- Added "AddLight(const VPLight&)" method because it was not possible to add a
+  constant light to a scene. Changed the lists "lights" and "objects" so
+  that they now keep const pointers.
+- Changed cameras, lights and objects to "protected" because derived classes need
+  access to them in order to call draw routines.
+- Added "DrawOGL" method.
+- Added "currentCamera" atribute. Added "GetCurrentCamera", "UseNextCamera"
+  and "UsePreviousCamera" methods.
+- Changed the type of objects from VPGraphicObj to VPSceneNode.
+- Removed methods and attributes to mark changed children.
+January 04, 2001 - Isabel Harb Manssour
+- Addition of new methods, constants and the "typeOfChange" attribute.
+- New methods implementation.
+September 27, 2000 - Anderson Maciel
+- New methods and attributes addition.
+June 22, 2000 - Anderson Maciel
+- Methods implementation.
+June 08, 2000 - Luciana Porcher Nedel
+- Class declaration.
+May 30, 2000 - Isabel Harb Manssour
+- Class declaration.

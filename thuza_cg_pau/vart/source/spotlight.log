@@ -1,0 +1,17 @@
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+September 16, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "vp" prefix from every method name.
+- Removed "location" attribute because it was added to VPLight.
+- Removed the methods: SetLocation, GetLocation.
+August 10, 2000 - Anderson Maciel
+- Classes declaration and methods addition.
+- Includes and text format.
+June 19, 2000 - Rodrigo Berggevist Martins
+- Classes declaration.
+- Constructors and some methods implementation.
+June 08, 2000 - Luciana Porcher Nedel
+- Classes declaration.
+May 22, 2000 - Isabel Harb Manssour
+- Classes declaration.

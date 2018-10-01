@@ -1,0 +1,12 @@
+Jun 02, 2006 - Bruno de Oliveira Schneider
+- Marked class as deprecated.
+- General renaming to account for project rename (VPAT->V-ART).
+Sep 27, 2005 - Bruno de Oliveira Schneider
+- Added virtual destructor.
+Sep 15, 2004 - Bruno de Oliveira Schneider
+- Removed the "vp" prefix from every method.
+- Code typing cleaned.
+- Added W related "get"s and "set"s.
+- Added DoxyGen documentation.
+Jul 10, 2000 - Isabel Harb Manssour
+- Classes and new methods declaration.

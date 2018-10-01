@@ -1,0 +1,19 @@
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added copy constructor. Note that the 'active' atribute is set to false.
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Added GetFinalTime(std::list<float>*).
+- Added operator<<.
+- Added const Dof* GetTarget().
+- Static attribute "priority" is now initialized with 1.
+Jul 10, 2006 - Bruno de Oliveira Schneider
+- Move() is now virtual.
+- Contructor DofMover(float, float, float) renamed as "Initialize" method.
+Jul 03, 2006 - Bruno de Oliveira Schneider
+- Added "minimumDuration".
+- Removed MoveDof() and Activate().
+- Changed MoveDof() so that goalPosition is now computed by Interpolator::GetValue.
+  This should enable noisy interpolation even if positionRange is zero.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Mar 23, 2006 - Bruno de Oliveira Schneider 
+- File created.

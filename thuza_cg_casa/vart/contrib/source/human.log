@@ -1,0 +1,27 @@
+Oct 22, 2009 - Bruno de Oliveira Schneider
+- Added void "ActivateBreatheAction(bool)" and "void ActivateRestAction(bool)" so that an
+  application is able to turn off/on breathe and rest.
+Oct 30, 2008 - Bruno de Oliveira Schneider
+- Ported actions to the new JointAction class.
+- Added affective attributes.
+- Added methods to query human positioning data.
+- Foot sticking capabilities have been enhanced.
+- Added float AngleToPosition(const Point4D&) const.
+- Added bool WalkTo(float, float, const Point4D&).
+- Human now rotates around its fixed point.
+Aug 07, 2008 - Bruno de Oliveira Schneider
+- Added a system for sticking a foot to ground while joints move.
+  It is now possible to walk without foot skating.
+- Position adjusted such world Y = 0 is some sort of ground height.
+- Orientation adjusted such that Y axis is the vertical world axis.
+  This is temporary, until models are created by such convention.
+- Added rootJointPtr, hipJointPtr, lfJointPtr and rfJointPtr.
+- Added rightLeg and leftLeg.
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added "tiredModifier" attribute.
+- Changed "bool LoadFromFile(const std::string& fileName)".
+- Added Action* LoadAction(const std::string&).
+Feb 6, 2007 - Leonardo Garcia Fischer
+- Added a copy constructor.
+Oct 30, 2006 - Bruno de Oliveira Schneider
+- File created.

@@ -1,0 +1,24 @@
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added operator '=', to copy data between joints.
+- Added copy constructor.
+- Added virtual SceneNode * Copy() method implementation. Note that in this 
+  method, each copied dof points to the copy of joint, differently of copy 
+  constructor and operator '='.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Added some documentation.
+- SetAductionTo is now SetAdductionTo (fixed spelling, kept old name for compatibility).
+Jan 10, 2005 - Bruno de Oliveira Schneider
+- Fixed DoxyGen class description.
+- Removed previously commented constructors.
+Oct 07, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. Doxygen documentation started.
+- Removed "#include <stdio.h>" from implementation file.
+- Removed 'vp' preffix of every method name.
+- Reimplemented "AddDof(VPDof*)" according to changes in VPDof and VPJoint.
+- Commented out old constructors because they leak memory and because of changes
+  in VPJoint and VPDof.
+Jan 15, 2001 - Anderson Maciel
+- Class and new methods declaration.
+Jan 16, 2000 - Anderson Maciel
+- Methods implementation.

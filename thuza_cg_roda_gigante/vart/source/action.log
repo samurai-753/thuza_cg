@@ -1,0 +1,34 @@
+Aug 29, 2008 - Bruno de Oliveira Schneider
+- Marked as DEPRECATED.
+  This class has moved to JointAction because of the new action hierarchy to accommodate new
+  action types with enhanced speed modifier control.
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added frameFrequency static public attribute (float).
+- Added void ModifyDofMovers(DMModifier& mod).
+- Move() now resets "timeToLive" when deactivating because of elapsed time.
+- Deactivate() no longer deactivates all active actions. It seems that only DOFs
+  that were being used by the action need recomputation.
+Mar 12, 2007 - Leonardo Garcia Fischer
+- Moved the method XmlAction::Copy() to Action::Copy().
+- Converted some 'tabs' to spaces on the files.
+Feb 06, 2007 - Leonardo Garcia Fischer
+- Added the operator '=', to copy data in XmlAction::Copy() method.
+- Added method AddJointMover(Joint* jointPtr, JointMover* jointMover), to add a copy of jointMover that points to jointPtr.
+- Renamed atribute moverList to jointMoverList.
+Dec 13, 2006 - Bruno de Oliveira Schneider
+- Added callbackPtr public attribute.
+Nov 23, 2006 - Bruno de Oliveira Schneider
+- Fixed a bug in Activate().
+Nov 20, 2006 - Bruno de Oliveira Schneider
+- Added "void Deactivate(float)" and "timeToLive".
+- Added GetFinalTimes(std::list<float>*).
+- Added bool IsCyclic().
+- Added operator <<.
+Jun 30, 2006 - Bruno de Oliveira Schneider
+- Fixed some bugs in Move().
+- Added "description" attribute.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+- Cyclic actions were not reseting dof movers at every cycle: fixed.
+Mar 28, 2006 - Bruno de Oliveira Schneider
+- File created.

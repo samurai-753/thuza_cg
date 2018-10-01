@@ -1,0 +1,64 @@
+May 30, 2007 - Bruno de Oliveira Schneider
+- Added "void ScaleVisibleVolume(float, float)".
+Feb 23, 2007 - Leonardo Garcia Fischer
+- Modified the parameter radians from double to float in methods 
+  void YawAroundTarget(float radians), void YawAroundTarget(float radians), 
+  void Roll(float radians), void PitchAroundTarget(float radians), to avoid some 
+  compiler warnings ("convertion from double to float").
+Feb 08, 2007 - Leonardo Garcia Fischer
+- Added "const double GetVisibleVolumeLeftLimit()  const".
+- Added "const double GetVisibleVolumeRightLimit()  const".
+- Added "const double GetVisibleVolumeTopLimit()  const".
+- Added "const double GetVisibleVolumeBottomLimit()  const".
+Jan 19, 2007 - Bruno de Oliveira Schneider
+- Added "void FrontVector(Point4D* resultPtr) const".
+- Added "void LeftVector(Point4D* resultPtr) const".
+- Added "void Roll(double radians)".
+Oct 20, 2006 - Leonardo Garcia Fischer
+- Added '#include <windows.h>' for compilation under MS-Windows.
+Aug 29, 2006 - Bruno de Oliveira Schneider
+- Added SetMatrices().
+Jun 07, 2006 - Bruno de Oliveira Schneider
+- Moved operator<< into VART namespace.
+May 30, 2006 - Bruno de Oliveira Schneider
+- General renaming to account for project rename (VPAT->V-ART).
+Dec 21, 2005 - Bruno de Oliveira Schneider
+- Attributes projectionType, fovY, aspectRatio, nearPlaneDistance, farPlaneDistance,
+  vvLeft, vvRight, vvTop, vvBottom, location, target and up changed from private to protected.
+- Removed commented old methods and attributes.
+May 20, 2005 - Bruno de Oliveira Schneider
+- Fixed vvBottom initialization (was 1, now is -1).
+- GetDescription is now inline and returns by reference.
+Dec 16, 2004 - Bruno de Oliveira Schneider
+- Changed DrawOGL, so that it now sets the projection matrix.
+- The projection type were changed from C preprocessor symbols to a public type
+  ProjectionType. Changed GetProjectionType and SetProjectionType.
+- Added aspectRatio attribute and related Get/Set methods.
+- Renamed nearPlane and farPlane to nearPlaneDistance and farPlaneDistance, along
+  with related Get/Set methods.
+- Added vvLeft, vvRight, vvTop and vvBottom to allow any orthographic projection.
+  Added related Get/Set methods.
+- Commented out viewHeight, viewWidth, winBottomLeft, winTopRight and related
+  Get/Set methods. It seems that they served to same purpose as vvLeft, vvRight, etc.
+- Added an output operator.
+- Added MoveSideways and MoveUp.
+Sep 24, 2004 - Bruno de Oliveira Schneider
+- Removed 'vp' preffix of every method name.
+- Added methods 'YawAroundTarget', 'PitchAroundTarget', 'MoveForward' and 'Yaw'.
+- Removed 'using namespace std;' from header file.
+- Code typing has been cleaned (tabs replaced by spaces, excessive spaces
+  removed, etc.) in the headers file because tabs and spaces were mixed together.
+- Changed the class of "location", "target" and "up" to VPPoint4D.
+- Added "const" to identify constant methods and to avoid copy large parameters
+  (except to those that would require changing other classes).
+- Added a copy constructor and "operator=" because this class is not static.
+- Added "(position, focus, upVec)" constructor.
+- Added "DrawOGL" method.
+April/25/2001 - Isabel Harb Manssour
+- New methods inclusion.
+September/01/2000 - Julierme Krüger Gavião
+- Gets and Sets of fovY attibute and ortho attributes modification.
+June/13/2000 - Isabel Harb Manssour
+- Gets and Sets update.
+June 09, 2000 - Andre Rubin Santos
+- Fixing Gets and Sets implementation.

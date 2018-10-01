@@ -1,0 +1,3 @@
+- Changed "OperateOn(SceneNode*)" to "OperateOn(const SceneNode*)" and other const issues.
+Dec 12, 2006 - Bruno de Oliveira Schneider
+- File created.

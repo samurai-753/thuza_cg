@@ -1,0 +1,11 @@
+Jun 01, 2006 - Bruno de Oliveira Schneider
+- Removed MINANG and MAXANG c-style constants.
+- General renaming to account for project rename (VPAT->V-ART).
+Oct 08, 2004 - Bruno de Oliveira Schneider
+- Code typing has been cleaned. DoxyGen documentation started.
+- Removed "vp" prefix from every method name.
+- Minor changes to "GetMin" and "GetMax" because of changes in VPCurve/VPBezier.
+Feb 28, 2001 - Anderson Maciel
+- Classes declaration.
+Feb 08, 2001 - Anderson Maciel
+- Classes declaration.
